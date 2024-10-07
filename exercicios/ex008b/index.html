@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras FOormatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    
+    <pre> <!--Para o código ficar com identação é preciso usar a tag PRE antes da tag CODE.-->
+        <code> <!--O COD não organiza o código com identação-->
+num = input('Digite um número: ')
+if num % 2 == 0
+    print(f'O número {num} é par.')
+else:
+    print(f'O número {num} é impar')
+        </code>
+    </pre>
+    
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo <q>o computador é um burro muito rápido.</q></p> <!--A tag <Q> é usada pra colocar entre aspas ("") a parte da frase. A tag Q deve ser usadas em citações apenas.-->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.estantevirtual.com.br/livro/html-xhtml-e-css-para-leigos-80R-9342-000-BK"> <!--O atributo CITE - fornece uma URL que identifica a fonte da citação. Essa informação pode ser útil para referência, embora não seja exibida diretamente na página. Em alguns navegadores, pode ser mostrada como uma dica ao passar o mouse sobre o bloco.-->
+        A diferença entre elementos íncline e um bloco de texto é importante. Os elementos HTML neste cápitulo descrevem os blocos.
+    </blockquote> <!--BLOCKQUOTE é usada para marcar uma citação em bloco. Ela geralmente indica que o texto dentro dela é uma citação de outra fonte, e pode ser exibido de forma diferenciada pelo navegador (por exemplo, com recuo).-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!--ABBR - Faz com que quando o usuário passar o mouse sobre a sigla "HTML", aparece uma dica informativa mostrando o que significa (HyperText Markup Language)-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p> <!--ler da direita para esquerda.-->
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo><p> <!--ler da esquerda para direita.-->
+</body>
+</html>

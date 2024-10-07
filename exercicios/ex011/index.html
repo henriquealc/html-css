@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--A BASE É A IMAGEM PADRÃO QUE VOCÊ QUER COLOCAR-->
+        <!--SOURCE - Para a imagem dinamica deve selecionar o soucer media types, deve colocar SEMPRE os px do menor para o maior como esta abaixo, e com 50px a mais do que á na imagem usada.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel"> <!--Carrega a imagem maior. Sempre deve carregar primeiro a imagem maior e depois ao imagens menores.-->
+    </picture>
+    <h1>Reproduzir Áudio</h1>
+    <p>Vamos aprender a Reproduzir um áudio em HTML</p>
+    <audio preload="metadata" controls autoplay loop>
+        <!--CONTROLS - Faz o botão de play aparecer.-->
+        <!-- A ordem é muito importante, tem que colocar primeiro MP3, no código abaixo ele vai tentar carregar primeiro o MP3 e assim sucessivamente.-->
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+        <source src="audio/guanacast-33.ogg" type="audio/ogg">
+        <source src="audio/guanacast-33.wav" type="audio/wav">
+        <!--WAV - É bom sempre que puder evitar pois é muito pesado para um site-->
+        <!--Se por acaso ele não conseguir reproduzir nenhum desses a mensagem abaixo será executada.-->
+        <p>Infelizmente seu navegar não consegue reproduzir áudio. <a href="audio/guanacast-33.mp3"></a> Clique aqui para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>
