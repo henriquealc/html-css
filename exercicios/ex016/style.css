@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Sempre fazer a configuração globlal*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+
+main{
+    background-color: rgb(255, 255, 255); /*Cor do fundo da caixa*/
+    border-radius: 10px; /*Arredonda os cantos da caixa*/
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616); /*Faz uma sombra na caixa*/
+    width: 60%; /*largura da caixa*/
+    padding: 10px; /*espaço lateral do texto dentro da caixa*/
+    margin: auto;/*Centraliza a caixa horizontalmente*/
+} 
+
+h1 {
+    color: #F39209; /*muda a cor do h1*/
+    text-align: center; /*Centraliza o titulo*/
+    text-shadow: 1px 1px 2px rgb(129, 77, 5, 0.726); /*Adiciona sombra no h1*/
+}
+
+h2{
+    color: #125189; /*cor do h2*/
+}
+
+p {
+    text-align: justify; /*Alinhamento do texto que esta no parágrafo(center, end, justify..)*/
+}
