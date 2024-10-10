@@ -6,7 +6,6 @@
     <title>Fontes em CSS</title>
     <style>
         body{
-            background-color: rgba(255, 226, 187, 0.932);
             font-family: Arial, Helvetica, sans-serif; /*Muda a fonte da pag*/
             /*
             Medidas Absolutas
@@ -21,14 +20,35 @@
             */
 
             font-size: 1em; /*16px é o padrão*/
+
+            
         }
-        h1, h2 {
-            color: #05903D;
-            font-family:'Times New Roman', Times, serif; /*Muda as fontes do h1 e h2*/
+
+
+        h1 {
+            /*Da pra combinar negrito e italico usando weight e style*/
+            
+            /*TEM ALGUMAS FAMILIAS DE FONTES QUE NÃO POSSIBILITA FAZER OQ ESTA SENDO FEITO ABAIXO*/
+
+            /* font-family: 'work Sans', sans-serif;
+            font-weight: bolder;  /*Significa peso da fonte. Ela aceita lighter, normal, bold, bolder. Também aceita númeração de 100 a 900. Deixa as letras em negrito*/
+            /* font-style: italic;
+            text-decoration: underline; /* Faz ficar sublinhado */
+            
+            /*weight- Peso, width - Largura, heght - Altura*/
+
+            /*shorthand font
+            DEVE SEGUIR ESTA ORDEM!!
+            font-style -> font-weight -> font-size -> font-family*/
+            font:italic bolder 3em 'work Sans', sans-serif;
+
+        }
+        h2 {
+            font: bold 2 em 'Work Sans';
+            text-decoration: underline;
         }
 
         p {
-            color: rgb(8, 0, 121);
             font-family: monospace; /*Muda a fonte dos parágrafos*/ 
         }
 
@@ -44,5 +64,3 @@
 
 </body>
 </html>
-
-<!--Video que devo continuar a estudar: https://www.youtube.com/watch?v=oHj5ez1bSkc&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=13 -->
