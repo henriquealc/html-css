@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        /*Muda a fonte de toda a página*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Esconde o TEXTO ESCONDIDO. '>' informa que o texto que deve ser escondido esta dentro da div*/
+        div > p{
+            display: none;
+           
+        }
+
+        /*Modifica o 'página inicial' que esta dentro da div > p > a*/
+        div > p > a {
+            font-weight: bold;
+            color: yellow;
+        }
+        div:hover > p{
+            display: block; /*Faz o texto que esta escondido aparecer quando passar o mouse*/
+            color: white; /*Cor do texto*/
+            background-color: red; /*Cor do fundo do texto*/
+            width: 190px; /*LARGURA*/
+        }
+
+
+        /*Faz com que 'Passe o mouse aqui' mude de cor quando passar o mouse.*/
+        div:hover{
+            color: rgb(0, 38, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+        <p><a href="pseudoclasse.html"> Página Inicial</a></p>
+    </div>
+    <p>Fim do exemplo</p>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block; /*Faz fica na mesma linha as caixas*/
+            background-color: darkgray;
+            text-align: center; /*Faz os números ficar no centro da caixa*/
+            border: 2px solid black; /*Shorthand - largura, tipo, cor, cria uma borda em cada div*/ 
+            height: 200px;/*ALTURA - Faz cada div ter a altura de 200px*/ 
+            width: 200px; /*LARGURA - Faz cada div ter largura de 200px*/
+        }
+
+        /*Faz mudar a cor ao passar o mouse*/
+        div:hover{
+            background-color: black;
+        }
+
+        p{
+            background-color: rgba(255, 255, 75, 0.863);
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+        }
+        
+        div#d2:hover {
+            background-color: white;
+        }
+
+        div#d3:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="01">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <p><a href="hover.html">PÁGINA SOBRE HOVER</a></p>
+</html>
