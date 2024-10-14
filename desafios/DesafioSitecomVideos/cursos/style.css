@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+}
+
+h1#hardware{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1#javascript{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+h1#python{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+h1#html{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+.video{
+    text-align: center;
+}
