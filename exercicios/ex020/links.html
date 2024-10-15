@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = peseudo-element
+            >  = clildren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Muda a cor dos links*/
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none; /*Tira o sublinhado que fica abaixo dos links*/
+            font-weight: bold; /*Coloca os links em Negrito*/
+        }
+
+        /*Faz ficar 'darkred' se ja foi visitado*/
+        a:visited {
+            color: darkred;
+        }
+
+        /*Faz com que quando passe o mouse em cima apareça sublinhado e preto*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*Faz com que quando ele for clicado fique amarelo*/
+        a:active{
+            color: yellow;
+        }
+        
+        .especial {
+            background-color: rgb(255, 140, 140);
+        }
+
+        .especial::before{
+            content: '⟹';
+        }
+        /* Adiciona algum conteúdo depois do link*/
+        .especial::after{
+            content: ' ⟸'; /*Significa conteúdo*/
+   
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" class="especial">Canal YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
