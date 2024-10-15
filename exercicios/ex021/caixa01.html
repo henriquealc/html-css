@@ -5,22 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <style>
-        h1{
+        h1{ /* BOX-LEVEL*/
+         
+            /*Faz ficar inline */
+            /* display: inline;*/
+
             background-color: lightgray;
+            
             height: 300px;
             width: 300px;
+            
             border-width: 10px; /*cria uma borda, px é sua espessura*/
             border-style: solid; /*Estilo da borda*/
             border-color: darkslategray; /*Cor da borda*/
 
             /*Cria espaços entre o conteúdo e a borda da caixa, DEVE SER FEITO NO SENTIDO HORÁRIO */
-            padding-top: 10px;
+
+            /*Padding simplificado*/
+            /*Se as 4 for iguais so precisa informar um.*/
+            padding: 10px;
+
+            /* padding-top: 10px;
             padding-right: 10px;            
             padding-bottom: 10px;
-            padding-left: 10px;
+            padding-left: 10px; */
+
+            /* Define o espaço ao redor de um elemento, fora de suas bordas.*/
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+
+            /*Simplificando o margin*/
+            /* margin: 20px 20px 40px 20px; */
+            margin: 20px auto 40px auto; /*Centraliza o caixa*/
+
+            text-align: center; /*Centraliza o texto que esta dentro da caixa*/
+            
+
+            /* É usada para criar uma linha ao redor de um elemento */
+            /* outline-width: 5px; */
+            /* outline-style: dashed; Cria uma linha pontilhada */
+            /* outline-color: rgb(69, 113, 119); */
+            /*Simplificando o outline - outline é muito pouco usada*/
+            outline: 5px dashed rgb(69, 113, 119);
         }
-        a {
-            border-width: 3px;
+        a { /*INLINE-LEVEL*/
+
+            /*Faz ficar em box-level*/
+            /* display: block; */
+
+            /*Cria uma borda ao redor do elemento link*/
+            border-width: 10px;
             border-style: solid;
             border-color: red;
 
