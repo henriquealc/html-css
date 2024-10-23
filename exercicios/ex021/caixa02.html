@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;;
+            background-color: rgb(168, 168, 168);
+            margin: 0px;
+        }
+        header{
+            /*Configuração do header*/
+            background-color: white;
+            padding: 10px; 
+            margin: 10px; 
+        }
+
+        nav {
+            /*Fundo onde fica os 'links'*/
+            background-color: rgb(145, 145, 145);
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /*Adiciona sombas, usar o inset cria uma sombra interna*/
+
+        }
+        nav > a {
+            /*Barra de navegação onde fica os link'*/
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px; /**/
+            margin: 10px;
+            border-radius: 10px 0px; /*Cria uma bordar arredondada*/ 
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384); /*Cria um sombra no main*/
+        }
+
+        #assunto{
+            /*Coloca o 'Esportes tecnologia Política' em negrito*/
+            font-weight: bold;
+        }
+        
+        footer{
+            /*Configura o radapé da página*/
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+
+        }
+            
+        nav > a:hover{
+            /*Faz com que quando passar o mouse os nomes 'link' ficar sublinhados e na cor preta*/
+            text-decoration: underline;
+            color: black;
+        }
+
+        article{
+            background-color: rgb(185, 185, 185);
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(158, 158, 158);
+        }
+        footer > p{
+            /*Coloca margem no paragrafo para poder ficar o fundo do footer menor*/
+            margin: 0px;
+        }
+
+        div#bola{ /*Cria uma bola*/
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%; /*Faz ficar em formato de bola, no border-radius pode usar porcentagem e px*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <p>Esportes Tecnologia Política</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea fugiat illo quidem. Officiis veritatis vero distinctio molestias quidem blanditiis cupiditate dicta qui sunt. Omnis, fugit quod? Ipsum, impedit nisi.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Henrique</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
