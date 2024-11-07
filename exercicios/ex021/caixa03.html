@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1{
+            border: 20px solid transparent; /*Sempre deve criar uma borda o px é o tamanho da borda*/
+            padding: 10px;
+            /* border-image-source: url(borda.png); /*Carrega a imagem*/
+            border-image-slice: 27; /*Faz o fatiamento da imagem*/
+            border-image-repeat: repeat; /* Faz a imagem ficar se repetindo / border-image-repeat: stretch; Pega a borda e da uma esticada.*/
+            text-align: center; /*Centraliza o h1*/
+            color: red;
+        
+            /*Usando o Shorthand para simplificar, a ordem é source, slice, repeat*/ 
+            border-image: url(borda.png) 27 repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+
+</body>
+</html>
