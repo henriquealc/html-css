@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'android';
-    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+    src: url(pacote-projeto-d010\fontes\idroid.otf) format(opentype);
     font-weight: normal;
     font-style: normal;
 
@@ -24,7 +24,7 @@ header{
 header > h1{
     color: rgb(255, 255, 255);
     font-size: 23px;
-    text-shadow: 0px 2px black;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
     text-align: center;
 }
 
@@ -79,13 +79,27 @@ main{
     text-indent: 20px;
 }
 
-.iframe{
-    background-color: green;
-    margin: 0px;
-    padding: 0px;
+.nomedestaque{
+    background-color: transparent;
+    color:rgb(0, 85, 0);
+    font-weight: bold;
 }
 
-article{
+.linkexterno{
+    color: rgb(0, 85, 0);
+    background-color: aquamarine;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.video{
+    background-color: green;
+    margin: 0px;
+    padding: 5px;
+}
+
+aside{
     background-color: #C5EBD6;
     width: auto;
     margin: 10px;
@@ -101,4 +115,7 @@ footer{
     margin-top: 10px;
     padding: 4px;
 
+}
+strong:hover{
+    text-decoration: underline;
 }
