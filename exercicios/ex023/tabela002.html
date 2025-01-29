@@ -9,8 +9,8 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 500px;
-            border-collapse: collapse;
+            width: 500px; /*Define a largura da tabela*/
+            border-collapse: collapse; 
             
         }
 
@@ -19,18 +19,39 @@
             padding: 10px;
         }
     
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        /*Cria um cabeçalho fixo*/
+        thead > tr > th {
+            position: sticky; /*sticky - colavel/grudavel */
+            top: -1px; /*Faz o cabeçalho colar na parte -1, se usar 0 fica vazando pixel na parte de cima*/
+            background-color: #383838; /*Faz a cor de fundo*/
+        }
+
+        /*odd - pares / even - impares.*/
+        tbody > tr:nth-child(odd){  /* pode ser tb 2n-1*/
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){ /*pode ser tb 2n*/
+            background-color: white;
         }
 
         td.num{
             text-align: right;
+            
         }
 
-        td.sigla{
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -38,6 +59,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION 
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,56 +68,54 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption> <!--Cria uma legenda na tabela-->
         <thead>
             <tr>
-                <th>Estado</th> <!-- TH - CABEÇALHO DA TABELA -->
-                <th>Abreviação</th>
-                <th>População</th>
+                <th scope="col" style="width: 200px;">Estado</th> <!-- TH - CABEÇALHO DA TABELA -->
+                <th scope="col" style="width: 50px;">População</th> <!-- 'COL' Usado para quando as abreviações esta na  mesma coluna da tabela-->
             </tr>
         </thead>
         <tbody>
             <tr> <!--TR - LINHA DA TABELA-->
                 <td>São Paulo</td> <!-- TD - DADO DA TABELA-->
-                <td class="sigla">SP</td>
                 <td class="num">44.411.238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="sigla">MG</td>
                 <td class="num">20.539.989</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <TD class="sigla">RJ</TD>
                 <td class="num">16.055.174</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td class="sigla">BA</td>
                 <td class="num">14.141.626</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td class="sigla">RS</td>
                 <td class="num">11.882.965</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td class="sigla">PA</td>
                 <td class="num">11.444.380</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td class="sigla">PE</td>
                 <td class="num">9.058.931</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!-- 'ROW' Usado para quando total de habitantes esta na mesma linha da tabela-->
                 <td class="num"><strong>127.534.303</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci perspiciatis mollitia eos. Ullam molestiae recusandae odio ipsum animi debitis dolor eos accusantium hic et est beatae, quia facere praesentium!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia eaque id vitae accusamus optio dolor repudiandae nisi minima sint eos deleniti autem, adipisci, iste vero veritatis provident. Optio, tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illo cumque ea iste ex a ducimus quis velit fugiat dolorem repellendus saepe tempora, quam reiciendis? Ut, quae! Accusantium, quos delectus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis mollitia animi eum, aut doloremque illo ipsa! Commodi dolorum assumenda maiores tempora unde. Veritatis nulla porro quos sint iste possimus aut?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci perspiciatis mollitia eos. Ullam molestiae recusandae odio ipsum animi debitis dolor eos accusantium hic et est beatae, quia facere praesentium!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia eaque id vitae accusamus optio dolor repudiandae nisi minima sint eos deleniti autem, adipisci, iste vero veritatis provident. Optio, tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illo cumque ea iste ex a ducimus quis velit fugiat dolorem repellendus saepe tempora, quam reiciendis? Ut, quae! Accusantium, quos delectus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis mollitia animi eum, aut doloremque illo ipsa! Commodi dolorum assumenda maiores tempora unde. Veritatis nulla porro quos sint iste possimus aut?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci perspiciatis mollitia eos. Ullam molestiae recusandae odio ipsum animi debitis dolor eos accusantium hic et est beatae, quia facere praesentium!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia eaque id vitae accusamus optio dolor repudiandae nisi minima sint eos deleniti autem, adipisci, iste vero veritatis provident. Optio, tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illo cumque ea iste ex a ducimus quis velit fugiat dolorem repellendus saepe tempora, quam reiciendis? Ut, quae! Accusantium, quos delectus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis mollitia animi eum, aut doloremque illo ipsa! Commodi dolorum assumenda maiores tempora unde. Veritatis nulla porro quos sint iste possimus aut?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci perspiciatis mollitia eos. Ullam molestiae recusandae odio ipsum animi debitis dolor eos accusantium hic et est beatae, quia facere praesentium!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia eaque id vitae accusamus optio dolor repudiandae nisi minima sint eos deleniti autem, adipisci, iste vero veritatis provident. Optio, tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illo cumque ea iste ex a ducimus quis velit fugiat dolorem repellendus saepe tempora, quam reiciendis? Ut, quae! Accusantium, quos delectus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis mollitia animi eum, aut doloremque illo ipsa! Commodi dolorum assumenda maiores tempora unde. Veritatis nulla porro quos sint iste possimus aut?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci perspiciatis mollitia eos. Ullam molestiae recusandae odio ipsum animi debitis dolor eos accusantium hic et est beatae, quia facere praesentium!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia eaque id vitae accusamus optio dolor repudiandae nisi minima sint eos deleniti autem, adipisci, iste vero veritatis provident. Optio, tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illo cumque ea iste ex a ducimus quis velit fugiat dolorem repellendus saepe tempora, quam reiciendis? Ut, quae! Accusantium, quos delectus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis mollitia animi eum, aut doloremque illo ipsa! Commodi dolorum assumenda maiores tempora unde. Veritatis nulla porro quos sint iste possimus aut?</p>
 </body>
 </html>
