@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(211, 211, 211);
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            
+        }
+
+        caption{
+            color: black;
+            font-weight: bold;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        p{
+            margin-left: 73px;
+        }
+
+        a, abbr{
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+            font-weight: bold;
+            
+        }
+        a:hover{
+            color: rgb(138, 138, 138);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>TABELA DE LETRAS</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <a href="tabela.html">
+        <abbr title="Acessar Tabela de Números">
+            <p>TABELA NÚMEROS</p>
+        </abbr>
+    </a>
+</body>
+</html>
