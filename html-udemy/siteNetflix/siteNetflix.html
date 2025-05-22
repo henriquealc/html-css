@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definindo o conjunto de caracteres UTF-8 para garantir o correto processamento de acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    
+    <!-- Tornando a página responsiva, ajustando o layout para diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Definindo o título da página que aparece na aba do navegador -->
+    <title>Netflix Brasil</title>
+    
+    <link rel="shortcut icon" href="imagens/netflix_logo_icon_170919.png" type="image/x-icon">
+    <style>
+        /* Resetando as margens e o preenchimento de todos os elementos para ter mais controle sobre o layout */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Estilizando o corpo da página */
+        body{
+            /* Definindo a imagem de fundo, cobrindo toda a tela */
+            background-image: url(imagens/tela-de-fundo-site-login-netflix-brasil.jpg);
+            
+            /* Cor de fundo preta, caso a imagem não carregue */
+            background-color: rgb(0, 0, 0, 0.7);
+            
+            /* Garantindo que a imagem de fundo cubra toda a tela */
+            background-size: cover;
+            
+            /* Centralizando a imagem de fundo */
+            background-position: center;
+            
+            /* A imagem de fundo ficará fixa ao rolar a página */
+            background-attachment: fixed;
+            
+            /* Garantindo que a imagem de fundo não se repita */
+            background-repeat: no-repeat;
+            
+            /* Definindo a cor do texto como branco */
+            color: white;
+        }
+
+        /* Estilizando o cabeçalho */
+        #heading div{
+            /* Definindo a largura do container como 90% da tela */
+            width: 90%;
+            
+            /* Usando flexbox para distribuir os itens */
+            display: flex;
+            
+            /* Espaçando os itens (logo e botão "Entrar") nas extremidades */
+            justify-content: space-between;
+            
+            /* Centralizando o container na página */
+            margin: 0 auto;
+        }
+
+        /* Estilizando os títulos h1 dentro do cabeçalho */
+        #heading .h1{
+            /* Definindo o tamanho da fonte */
+            font-size: 40px;
+            
+            /* Transformando o texto para maiúsculo */
+            text-transform: uppercase;
+            
+            /* Adicionando espaçamento interno ao redor do título */
+            padding: 20px;
+        }
+
+        .principal h1{
+            font-weight: 900;
+            font-style: oblique;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        /* Estilizando os links dentro do cabeçalho */
+        #heading a{
+            /* Definindo a cor do link como vermelha */
+            color: red;
+            
+            /* Removendo o sublinhado dos links */
+            text-decoration: none;
+        }
+
+        /* Estilizando a seção principal (texto centralizado na tela) */
+        .principal{
+            width: 508px;
+            height: 80px;
+
+            margin: auto; /*Alinha no centro*/
+
+            /* Adicionando espaçamento interno */
+            padding: 10px;
+            
+            /* Definindo o tamanho da fonte */
+            font-size: 2em;
+            
+            /* Centralizando o texto */
+            text-align: center;
+
+            /* Alinha o conteúdo verticalmente no meio da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 50vh;  /* Isso faz a altura ocupar toda a altura da tela */
+
+        }
+
+        /*Configurações do botão*/
+        #heading .h1 button{
+            width: 80px;
+            border: none;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.4em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <!-- Link para o site da Netflix -->
+            <h1 class="h1">
+                <a href="siteNetflix.html">Netflix</a>
+            </h1>
+            <!-- Link para a página de login -->
+            <h2 class="h1">
+                <button>Entrar</button>
+            </h2>
+        </div>
+    </header>
+    
+    <!-- Seção principal com texto promocional -->
+    <div class="principal">
+        <!-- Texto principal sobre a oferta de filmes e séries -->
+        <h1 class="texto-principal">Filmes, séries e muito mais, sem limites</h1>
+        
+        <!-- Texto de preço e condição -->
+        <p>A partir de R$ 20,90. Cancele quando quiser.</p>
+    </div>
+</body>
+</html>
