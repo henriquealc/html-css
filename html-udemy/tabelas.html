@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Define que este é um documento HTML5 -->
+<html lang="pt-BR">
+<!-- Define o idioma do conteúdo da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, suportando acentuação -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que o layout seja adaptado à largura do dispositivo (responsividade) -->
+
+    <title>Tabelas</title>
+    <!-- Título da página que aparece na aba do navegador -->
+
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: sans-serif;
+            /* Define uma fonte sem serifa para o corpo da página */
+        }
+
+        table {
+            width: 800px;
+            /* Define a largura fixa da tabela */
+            border-collapse: collapse;
+            /* Remove os espaços entre as bordas das células */
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            /* Define uma borda cinza clara */
+            padding: 10px;
+            /* Espaçamento interno das células */
+            text-align: center;
+            /* Alinha o texto ao centro das células */
+        }
+
+        table caption {
+            caption-side: top;
+            /* Posiciona a legenda acima da tabela */
+            text-align: left;
+            /* Alinha o texto da legenda à esquerda */
+            font-style: italic;
+            /* Aplica estilo itálico à legenda */
+            font-size: 14px;
+            /* Tamanho da fonte da legenda */
+            margin: 5px 0px;
+            /* Espaço acima e abaixo da legenda */
+        }
+
+        tfoot td, table th {
+            background: #ddd;
+            /* Cor de fundo cinza clara no rodapé e nos títulos */
+        }
+
+        tfoot td {
+            font-style: italic;
+            /* Deixa o texto do rodapé em itálico */
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            /* A tabela não ultrapassa a largura da tela */
+            overflow-x: auto;
+            /* Adiciona barra de rolagem horizontal se necessário */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-table">
+        <!-- Div que permite a rolagem horizontal em dispositivos menores, tem que colocar a tabela dentro de um DIV pra que funcione -->
+
+        <table>
+            <!-- Tabela principal -->
+
+            <caption>Uma descrição para Tabela</caption>
+            <!-- Legenda/descritivo da tabela -->
+
+            <thead>
+                <!-- Cabeçalho da tabela -->
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Corpo da tabela com os dados principais -->
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Corpo 1</td>
+                    <!-- Esta célula ocupa duas colunas -->
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <!-- Rodapé da tabela -->
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
