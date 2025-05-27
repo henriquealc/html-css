@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        label{
+            cursor: pointer;
+            /* display: block; Faz o campo "Seu nome ficar em baixo do lable "nome" */
+        }
+        
+        label {
+            cursor: pointer;
+            /* Mostra o cursor como "mãozinha" ao passar sobre o rótulo */
+
+            /* display: block; Faz o campo "Seu nome" ficar embaixo do label "Nome" */
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <!-- Início do formulário
+             - action="#" → não envia para lugar nenhum (exemplo)
+             - method="get" → envia os dados pela URL
+             - target="_blank" → abre a resposta em nova aba
+             - autocomplete="off" → desativa sugestões automáticas -->
+
+        <p>O meu formulario</p>
+        <!-- Título ou introdução do formulário -->
+
+        <p>
+            <label for="nome">Nome:</label>
+            <!-- Rótulo associado ao input com id="nome" -->
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            <!-- Campo de texto para o nome, com texto de dica -->
+        </p>
+
+        <p>
+            <!-- Conjunto de checkboxes para múltiplas seleções -->
+            <label for="dev1">Sou dev1</label>
+            <input type="checkbox" id="dev1" name="dev1" value="sim"><br>
+
+            <label for="dev2">Sou dev2</label>
+            <input type="checkbox" name="dev2" id="dev2" value="sim"><br>
+
+            <label for="dev3">Sou dev3</label>
+            <input type="checkbox" name="dev3" id="dev3" value="sim"><br>
+        </p>
+
+        <p>
+            <p>Gênero</p>
+            <!-- Agrupamento de opções de gênero com radio buttons -->
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="feminino" value="feminino"><br>
+
+            <label for="outro_outra">Outro ou Outra</label>
+            <input type="radio" name="genero" id="outro_outra" value="outro_outra">
+        </p>
+        
+        <p>
+            <label for="date">Date:</label>
+            <!-- Rótulo associado ao campo de data -->
+            <input type="date" name="date" id="date" value="2025-05-27">
+            <!-- Campo de seleção de data com valor padrão -->
+        </p>
+
+        <p>
+            <label for="datetime">Date:</label>
+            <!-- Rótulo associado ao campo de data e hora -->
+            <input type="datetime-local" name="datetime" id="datetime" value="2025-05-27T16:00">
+            <!-- Campo que permite selecionar data e hora local com valor padrão -->
+        </p>
+
+        <p>
+            <label for="time">Date:</label>
+            <!-- Rótulo para o campo de hora -->
+            <input type="time" name="time" id="time" value="16:00:01">
+            <!-- Campo para escolher somente o horário, com valor inicial -->
+        </p>
+
+        <p>
+            <label for="cor">Cor preferida</label>
+            <!-- Rótulo para o campo de cor -->
+            <input type="color" name="cor" id="cor" value="#003d66">
+            <!-- Campo que abre um seletor de cores, com valor inicial azul escuro -->
+        </p>
+
+        <p>
+            <label for="email">Seu email:</label>
+            <!-- Rótulo para o campo de email -->
+            <input type="email" name="email" id="email" placeholder="ex.: email@email.com">
+            <!-- Campo para digitar email, com validação automática -->
+        </p>
+
+        <p>
+            <label for="file">Sua foto</label>
+            <!-- Rótulo para o campo de envio de arquivo -->
+            <input type="file" name="file" id="file" accept=".png, .svg, image/*" multiple>
+            <!-- Permite selecionar um ou mais arquivos, aceitando imagens e formatos específicos -->
+        </p>
+
+        <p>
+            <label for="number">Number:</label>
+            <!-- Rótulo para o campo numérico -->
+            <input type="number" name="number" id="number" placeholder="Digite um número" min="10" max="50" step="5">
+            <!-- Campo para número, limitado entre 10 e 50, de 5 em 5 -->
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <!-- Rótulo para o campo de senha -->
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            <!-- Campo para digitar senha (oculta os caracteres) -->
+        </p>
+
+        <p>
+            <label for="range">range:</label>
+            <!-- Rótulo para o controle deslizante -->
+            <input type="range" name="range" id="range" min="0" max="10" step="2">
+            <!-- Campo tipo slider (controle deslizante), com intervalo de 0 a 10 de 2 em 2 -->
+        </p>
+
+        <p>
+            <label for="url">Sua url:</label>
+            <!-- Rótulo para o campo de URL -->
+            <input type="url" name="url" id="url" placeholder="URL">
+            <!-- Campo para digitar uma URL válida -->
+        </p>
+
+        <!-- Melhora a semântica do site -->
+        <p>
+            <label for="search">Sua url:</label>
+            <!-- Rótulo para o campo de busca -->
+            <input type="search" name="search" id="search" placeholder="search">
+            <!-- Campo de busca, sem funcionalidade específica mas com semântica de pesquisa -->
+        </p>
+
+        <p>
+            <label for="select">Selecione uma opção</label>
+            <!-- Rótulo para o campo de seleção (dropdown) -->
+            <select name="select" id="select">
+                <!-- Menu suspenso com várias opções -->
+                <option value="qualquer 1" label="valor 1">
+                <!-- value: valor enviado ao servidor; label: o texto exibido -->
+                <option value="qualquer 2" label="valor 2">
+                <option value="qualquer 3" label="valor 3">
+                <option value="qualquer 4" label="valor 4">
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">textarea:</label>
+            <!-- Rótulo para a área de texto -->
+            <textarea name="textarea" id="textarea" rows="3" cols="9" placeholder="Escreva a sua mensagem"></textarea>
+            <!-- Campo para texto longo, com 3 linhas visíveis e 9 colunas, com placeholder -->
+        </p>
+
+
+        <p>
+            <button type="reset">Reset</button>
+            <!-- Botão para limpar os campos preenchidos -->
+            <button type="submit">Enviar</button>
+            <!-- Botão para enviar os dados do formulário -->
+        </p>
+
+    </form>
+</body>
+</html>
