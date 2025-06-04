@@ -1,0 +1,85 @@
+@charset "UTF-8"; /* Define o conjunto de caracteres do documento como UTF-8 */
+
+/* Aplica uma transição suave de 1 segundo para todas as propriedades da classe .heading */
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+/* Quando o mouse passa por cima de um elemento com a classe .heading, a cor muda para vermelho */
+.heading:hover {
+    color: red;
+}
+
+/* Estilo padrão para todos os links (a): cor laranja escuro */
+a {
+    color: darkorange;
+}
+
+/* Estilo para links que ainda não foram visitados: cor rosa forte */
+a:link {
+    color: deeppink; 
+}
+
+/* Estilo para links que já foram visitados: cor vermelha */
+a:visited {
+    color: red; 
+}
+
+/* Quando o mouse passa por cima de um link:
+   - muda o fundo para azul-escuro
+   - cor do texto fica branca
+   - remove o sublinhado */
+a:hover {
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+/* Quando o link está sendo clicado:
+   - fundo cinza escuro
+   - texto branco
+   - sem sublinhado */
+a:active {
+    background-color: darkgrey;
+    color: white;
+    text-decoration: none;
+}
+
+/* Quando um input está em foco:
+   - adiciona sombra
+   - remove contorno padrão
+   - borda preta */
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+/* Quando um input está desabilitado:
+   - fundo azul
+   - cursor do tipo "não permitido" */
+input:disabled {
+    background: blue;
+    cursor: not-allowed;
+}
+
+/* Quando um input do tipo checkbox está marcado (checked) e tem um parágrafo <p> irmão adjacente:
+   - fundo do parágrafo fica vermelho
+   - texto fica azul-claro
+   - tamanho da fonte aumenta para 2em */
+input:checked + p {
+    background-color: red;
+    color: aqua;
+    font-size: 2em;
+}
+
+/* Seleciona o primeiro <li> dentro de .lista que está dentro de um elemento com a classe .pai:
+   - fundo vermelho */
+.pai .lista li:first-child {
+    background-color: red;
+}
+
+/*Muda a cor de todos os paragráfos para azul, menos o paragráfo que tiver a classe "meio*/
+p:not(.meio) {
+    color:blue;
+}

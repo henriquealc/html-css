@@ -1,2 +1,2 @@
-for i in range(4):
-    print(i*2)
+hexadecimal = 11868
+print(hex(hexadecimal)[2:])
