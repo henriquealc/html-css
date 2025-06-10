@@ -30,7 +30,7 @@ a:visited {
    - cor do texto fica branca
    - remove o sublinhado */
 a:hover {
-    background-color: darkslateblue;
+    background-color: rgb(60, 43, 177);
     color: white;
     text-decoration: none;
 }
@@ -69,6 +69,13 @@ input:disabled {
    - tamanho da fonte aumenta para 2em */
 input:checked + p {
     background-color: red;
+    color: aqua;
+    font-size: 2em;
+}
+
+/* Seleciona um parágrafo <p> que vem imediatamente após um <input> que NÃO está marcado (unchecked) */
+input:not(:checked) + p {
+    background-color: rgb(141, 122, 122);
     color: aqua;
     font-size: 2em;
 }
