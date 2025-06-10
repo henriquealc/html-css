@@ -1,0 +1,37 @@
+/* Define o tamanho base da fonte para 62.5% do valor padrão do navegador (normalmente 16px), ou seja, 10px. 
+   Isso facilita o uso de rem (por exemplo, 1.6rem = 16px). 
+   Também aplica rolagem suave ao navegar por âncoras. */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* Remove as margens e o preenchimento padrão de todos os elementos da página,
+   garantindo um layout mais previsível e consistente. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Classe para um contêiner pai que ocupa toda a altura da tela (100vh),
+   com fundo amarelo e oculta qualquer conteúdo que ultrapasse os limites (overflow hidden). */
+.pai {
+    height: 100vh;
+    background-color: yellow;
+    overflow: hidden;
+}
+
+/* Define o tamanho da fonte dos parágrafos para 1.6rem (equivalente a 16px, com base no font-size de 62.5%). */
+p {
+    font-size: 1.6rem;
+}
+
+/* Classe para definir o fundo vermelho em elementos que a utilizarem. */
+.color-one {
+    background-color: red;  
+}
+
+/* Classe para definir o fundo azul em elementos que a utilizarem. */
+.color-two {
+    background-color: blue;
+}
