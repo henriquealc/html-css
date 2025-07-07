@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.filha1, .filha2{
+    background: red;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    position: static;
+}
+
+.filha2{
+    background: yellow;
+}
